@@ -7,3 +7,5 @@ Set file_types to identify which extensions/formats you want to sort.
 
 Set categories to create/identify folders in which to sort files.
 
+Dependencies for use: os, shutil, time, keyboard, re (all python libraries).
+
