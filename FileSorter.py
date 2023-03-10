@@ -1,20 +1,20 @@
 import os, shutil, time, keyboard, re
 from os import path
 
-#Add more image types or categories at will
+# Add more image types or categories at will
 
 image_types = ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.tif', '.svg', '.jfif', '.mp4'] #
 categories = ['cats', 'videogames', 'people', 'places', 'food', 'cars', 'technology', 'other', 'test', 'memes', 'video','gif']
-print(f'  ___   ____    ____   ____  ____   ____  _____   ____  ___     ___   ____       ____  __ __ ')
-print(f' /   \ |    \  /    | /    ||    \ |    ||     | /    ||   \   /   \ |    \     |    \|  |  |')
-print(f'|     ||  D  )|   __||  o  ||  _  | |  | |__/  ||  o  ||    \ |     ||  D  )    |  o  )  |  |')
-print(f'|  O  ||    / |  |  ||     ||  |  | |  | |   __||     ||  D  ||  O  ||    /     |   _/|_   _|')
-print(f'|     ||    \ |  |_ ||  _  ||  |  | |  | |  /  ||  _  ||     ||     ||    \     |  |  |     |')
-print(f'|     ||  .  \|     ||  |  ||  |  | |  | |     ||  |  ||     ||     ||  .  \    |  |  |  |  |')
-print(f' \___/ |__|\_||___,_||__|__||__|__||____||_____||__|__||_____| \___/ |__|\_|    |__|  |__|__|\n\n\n')
+print('  ___   ____    ____   ____  ____   ____  _____   ____  ___     ___   ____       ____  __ __ ')
+print(' /   \ |    \  /    | /    ||    \ |    ||     | /    ||   \   /   \ |    \     |    \|  |  |')
+print('|     ||  D  )|   __||  o  ||  _  | |  | |__/  ||  o  ||    \ |     ||  D  )    |  o  )  |  |')
+print('|  O  ||    / |  |  ||     ||  |  | |  | |   __||     ||  D  ||  O  ||    /     |   _/|_   _|')
+print('|     ||    \ |  |_ ||  _  ||  |  | |  | |  /  ||  _  ||     ||     ||    \     |  |  |     |')
+print('|     ||  .  \|     ||  |  ||  |  | |  | |     ||  |  ||     ||     ||  .  \    |  |  |  |  |')
+print(' \___/ |__|\_||___,_||__|__||__|__||____||_____||__|__||_____| \___/ |__|\_|    |__|  |__|__|\n\n\n')
 
 
-print(f'Starting sorting program!!')
+print('Starting sorting program!!')
 print('Press "ctrl+alt+q" to quit the program')
 print('Press "ctrl+alt+p" to pause scanning the folder')
 print('Press "ctrl+alt+s" to re-start scanning the folder')
@@ -34,13 +34,13 @@ while True:
                 elif category in file and path.exists(f'{sortedFolder}/{category}'):
                     shutil.move(f'{sortedFolder}/{file}', f'{sortedFolder}/{category}')
     if keyboard.is_pressed('ctrl+alt+q'):
-        print(f'Quitting!!')
+        print('Quitting!!')
         break
     if keyboard.is_pressed('ctrl+alt+p'):
-        print(f'Paused!!')
+        print('Paused!!')
         while True:
             if keyboard.is_pressed('ctrl+alt+s'):
-                print(f'Restarting!')
+                print('Restarting!')
                 break
             if keyboard.is_pressed('ctrl+alt+q'):
                 break
